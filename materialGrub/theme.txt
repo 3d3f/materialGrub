@@ -1,0 +1,38 @@
+desktop-image: "background.png"
+desktop-color: "#1A1C1E"
+
+terminal-box: "terminal_box_*.png"
+terminal-left: "0"
+terminal-top: "0"
+terminal-width: "100%"
+terminal-height: "100%"
+terminal-border: "0"
+
++ boot_menu {
+  width = 34%
+  # to center it (100% - 34%) / 2 = 33%
+  left = 33%
+  top = 33%
+  height = 70%
+  item_font = "Google Sans Flex Regular 22"
+  item_color = "#E2E2E6"         
+  selected_item_color = "#E2E2E6" 
+  
+  icon_width = 48                
+  icon_height = 48
+  item_icon_space = 20
+  item_height = 96                
+  item_padding = 0
+  item_spacing = 5
+  item_pixmap_style = "boot_menu/item_*.png"
+  selected_item_pixmap_style = "boot_menu/select_*.png"
+}
+
++ progress_bar {
+  id = "__timeout__"
+  width = 100%
+  top = 19% 
+  bar_style = "progress_bar/frame_*.png"
+  highlight_style = "progress_bar/hl_*.png"
+  highlight_overlay = false
+}
